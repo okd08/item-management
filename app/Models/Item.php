@@ -2,10 +2,14 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\User; //Userモデルとリレーション
 
 class Item extends Model
 {
+    use HasFactory;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -33,4 +37,9 @@ class Item extends Model
      */
     protected $casts = [
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ItemController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,10 +22,18 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])
+    ->name('home');
 
 Route::prefix('items')->group(function () {
-    Route::get('/', [App\Http\Controllers\ItemController::class, 'index']);
-    Route::get('/add', [App\Http\Controllers\ItemController::class, 'add']);
-    Route::post('/add', [App\Http\Controllers\ItemController::class, 'add']);
+    Route::get('/', [ItemController::class, 'index'])
+        ->name('items.index');
+    Route::get('/add', [ItemController::class, 'add']);
+    Route::post('/add', [ItemController::class, 'add']);
+    Route::get('/{item}/edit', [ItemController::class, 'edit'])
+        ->name('items.edit');
+    Route::patch('/{item}/update', [ItemController::class, 'update'])
+        ->name('items.update');
+    Route::delete('/{item}/destroy', [ItemController::class, 'destroy'])
+        ->name('items.destroy');
 });
