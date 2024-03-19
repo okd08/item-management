@@ -14,32 +14,44 @@
                 <a href="{{ route('home') }}">&laquo戻る</a>
             </div>
             {{-- フォームタグ --}}
-            <form action="{{ route('items.index') }}" method="GET">
+            <form action="{{ route('items.index') }}" method="GET" class="text-left">
                 @csrf
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-tools">
-                            {{-- 商品登録ボタン --}}
-                            <div class="text-right mb-4">
-                                <a href="{{ url('items/add') }}" class="btn btn-primary">商品登録</a>
-                            </div>
-                            {{-- 検索フォーム --}}
+                        {{-- 商品登録ボタン --}}
+                        <div class="text-right mb-4">
+                            <a href="{{ url('items/add') }}" class="btn btn-primary">商品登録</a>
+                        </div>
+                        {{-- 検索フォーム --}}
+                        <div class="text-left">
+                            {{-- カテゴリ―選択 --}}
                             <div>
-                                {{-- カテゴリ―選択 --}}
-                                {{-- <div class="mb-4">
-                                    <p class="fw-bold lh-1">カテゴリー選択</p>
-                                    @foreach ($categories as $category)
-                                    <div class="form-check form-check-inline">
-                                        <input type="checkbox" name="categories[]" value="{{ $category->id }}" id="category{{ $category->id }}" class="form-check-input" {{ in_array($category->id, $originalRequest['categories'] ?? []) ? 'checked' : '' }}>
-                                        <label for="category{{ $category->id }}" class="form-check-label">{{ $category->name }}</label>
-                                    </div>
-                                    @endforeach
-                                </div> --}}
-                                {{-- キーワード入力 --}}
-                                <input type="text" name="keyword" value="{{ $keyword }}" placeholder="キーワードを入力">
-                                {{-- 検索ボタン --}}
-                                <button type="submit" class="btn btn-primary">検索</button>
+                                <p class="mb-2">カテゴリー選択</p>
+                                <label class="mr-2 ml-2"><input type="checkbox" name="types[]" value="トップス" {{ in_array('トップス', $types ?? []) ? 'checked' : '' }}>トップス </label>
+                                <label class="mr-2"><input type="checkbox" name="types[]" value="ボトムス" {{ in_array('ボトムス', $types ?? []) ? 'checked' : '' }}>ボトムス </label>
+                                <label class="mr-2"><input type="checkbox" name="types[]" value="ワンピース" {{ in_array('ワンピース', $types ?? []) ? 'checked' : '' }}>ワンピース </label>
+                                <label class="mr-2"><input type="checkbox" name="types[]" value="アウター" {{ in_array('アウター', $types ?? []) ? 'checked' : '' }}>アウター </label>
+                                <label class="mr-2"><input type="checkbox" name="types[]" value="シューズ" {{ in_array('シューズ', $types ?? []) ? 'checked' : '' }}>シューズ </label>
+                                <label class="mr-2"><input type="checkbox" name="types[]" value="バッグ" {{ in_array('バッグ', $types ?? []) ? 'checked' : '' }}>バッグ </label>
+                                <label class="mr-2"><input type="checkbox" name="types[]" value="アクセサリー" {{ in_array('アクセサリー', $types ?? []) ? 'checked' : '' }}>アクセサリー </label>
                             </div>
+                            {{-- カラー選択 --}}
+                            <div>
+                                <p class="mb-2">カラー選択</p>
+                                <label class="mr-2 ml-2"><input type="checkbox" name="colors[]" value="レッド" {{ in_array('レッド', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label>
+                                <label class="mr-2"><input type="checkbox" name="colors[]" value="ピンク" {{ in_array('ピンク', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="pink" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label>
+                                <label class="mr-2"><input type="checkbox" name="colors[]" value="オレンジ" {{ in_array('オレンジ', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label>
+                                <label class="mr-2"><input type="checkbox" name="colors[]" value="イエロー" {{ in_array('イエロー', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label>
+                                <label class="mr-2"><input type="checkbox" name="colors[]" value="ライトグリーン" {{ in_array('ライトグリーン', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="lightgreen" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label>
+                                <label class="mr-2"><input type="checkbox" name="colors[]" value="グリーン" {{ in_array('グリーン', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label>
+                                <label class="mr-2"><input type="checkbox" name="colors[]" value="ライトブルー" {{ in_array('ライトブルー', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="aqua" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label>
+                                <label class="mr-2"><input type="checkbox" name="colors[]" value="ブルー" {{ in_array('ブルー', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label><label class="mr-2"><input type="checkbox" name="colors[]" value="パープル" {{ in_array('パープル', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="purple" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label><label class="mr-2"><input type="checkbox" name="colors[]" value="ブラウン" {{ in_array('ブラウン', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="brown" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label><label class="mr-2"><input type="checkbox" name="colors[]" value="ブラック" {{ in_array('ブラック', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label><label class="mr-2"><input type="checkbox" name="colors[]" value="グレー" {{ in_array('グレー', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8"/></svg></label>
+                                <label class="mr-2"><input type="checkbox" name="colors[]" value="ホワイト" {{ in_array('ホワイト', $colors ?? []) ? 'checked' : '' }}> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><circle cx="8" cy="8" r="8" stroke="lightgray" stroke-width="1"/></svg></label>
+                            </div>
+                            {{-- キーワード入力 --}}
+                            <input type="text" name="keyword" value="{{ $keyword }}" placeholder="キーワードを入力">
+                            {{-- 検索ボタン --}}
+                            <button type="submit" class="btn btn-primary">検索</button>
                         </div>
                     </div>
                     <div class="card-body table-responsive p-0">

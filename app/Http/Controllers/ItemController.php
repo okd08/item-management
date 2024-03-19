@@ -28,14 +28,26 @@ class ItemController extends Controller
         $filters = $request->all();
         // 商品一覧を取得
         $items = Item::query();
+        // カテゴリー選択を取得
+        $types = $request->types;
+        // カラー選択を取得
+        $colors = $request->colors;
         // キーワードを取得
         $keyword = $request->keyword;
         // ソートの値を取得
         $sort = $request->sort;
 
-
         // 各リクエストがあった場合
         if (!empty($filters)) {
+
+            // カテゴリー選択
+            if (!empty($types)) {
+                $items->whereIn('type', $types);
+            }
+            // カラー選択
+            if (!empty($colors)) {
+                $items->whereIn('color', $colors);
+            }
             // キーワード検索
             if (!empty($keyword)) {
                 $items->where(function ($query) use ($keyword) {
@@ -44,9 +56,6 @@ class ItemController extends Controller
                 });
             }
         }
-
-        // 検索結果を一時的な変数に保存
-        // $searchResults = $items->get();
 
         // ID、名前順でソート
         if (!empty($sort)) {
@@ -73,7 +82,7 @@ class ItemController extends Controller
         // 検索クエリをリンクに追加
         $items->appends($filters);
 
-        return view('item.index', compact('items', 'keyword', 'sort'));
+        return view('item.index', compact('items', 'keyword', 'sort', 'types', 'colors'));
     }
 
     /**

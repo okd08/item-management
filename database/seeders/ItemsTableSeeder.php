@@ -146,7 +146,7 @@ class ItemsTableSeeder extends Seeder
                 'type' => 'ワンピース',
                 'detail' => '華やかな春らしいデザイン',
                 'price' => 7800,
-                'color' => 'ピンク',
+                'color' => 'オレンジ',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
