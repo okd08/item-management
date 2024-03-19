@@ -20,6 +20,8 @@ class Item extends Model
         'name',
         'type',
         'detail',
+        'price',
+        'color',
     ];
 
     /**

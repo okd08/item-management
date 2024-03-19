@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('user_id')->unsigned()->index();
             $table->string('name', 100)->index();
-            $table->string('type', 100)->nullable();
+            $table->string('type', 50)->nullable(false);
             $table->string('detail', 500)->nullable();
+            $table->integer('price')->nullable(false); //金額
+            $table->string('color', 50)->nullable(false); //色
             $table->timestamps();
         });
     }

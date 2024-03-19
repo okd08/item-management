@@ -19,6 +19,26 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'デニムシャツ',
                 'type' => 'トップス',
                 'detail' => 'カジュアルなスタイルに最適',
+                'price' => 4700,
+                'color' => 'ブルー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'デニムシャツ',
+                'type' => 'トップス',
+                'detail' => 'カジュアルなスタイルに最適',
+                'price' => 4700,
+                'color' => 'ライトブルー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'デニムシャツ',
+                'type' => 'トップス',
+                'detail' => 'カジュアルなスタイルに最適',
+                'price' => 4700,
+                'color' => 'ホワイト',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -26,6 +46,8 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'レザージャケット',
                 'type' => 'アウター',
                 'detail' => 'クールでスタイリッシュな印象を与える',
+                'price' => 12000,
+                'color' => 'ブラック',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -33,6 +55,26 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'フリンジバッグ',
                 'type' => 'バッグ',
                 'detail' => 'ボヘミアンな雰囲気を演出',
+                'price' => 7500,
+                'color' => 'ブラウン',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'フリンジバッグ',
+                'type' => 'バッグ',
+                'detail' => 'ボヘミアンな雰囲気を演出',
+                'price' => 7500,
+                'color' => 'ブラック',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'フリンジバッグ',
+                'type' => 'バッグ',
+                'detail' => 'ボヘミアンな雰囲気を演出',
+                'price' => 7500,
+                'color' => 'ホワイト',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -40,6 +82,26 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ワイドパンツ',
                 'type' => 'ボトムス',
                 'detail' => 'リラックス感のある穿き心地',
+                'price' => 7000,
+                'color' => 'レッド',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ワイドパンツ',
+                'type' => 'ボトムス',
+                'detail' => 'リラックス感のある穿き心地',
+                'price' => 7000,
+                'color' => 'ブルー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ワイドパンツ',
+                'type' => 'ボトムス',
+                'detail' => 'リラックス感のある穿き心地',
+                'price' => 7000,
+                'color' => 'ブラック',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -47,6 +109,26 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'レースブラウス',
                 'type' => 'トップス',
                 'detail' => 'フェミニンな魅力を引き出す',
+                'price' => 4500,
+                'color' => 'ホワイト',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'レースブラウス',
+                'type' => 'トップス',
+                'detail' => 'フェミニンな魅力を引き出す',
+                'price' => 4500,
+                'color' => 'ピンク',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'レースブラウス',
+                'type' => 'トップス',
+                'detail' => 'フェミニンな魅力を引き出す',
+                'price' => 4500,
+                'color' => 'ライトブルー',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -54,6 +136,35 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'フラワープリントワンピース',
                 'type' => 'ワンピース',
                 'detail' => '華やかな春らしいデザイン',
+                'price' => 7800,
+                'color' => 'ピンク',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'フラワープリントワンピース',
+                'type' => 'ワンピース',
+                'detail' => '華やかな春らしいデザイン',
+                'price' => 7800,
+                'color' => 'ピンク',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'フラワープリントワンピース',
+                'type' => 'ワンピース',
+                'detail' => '華やかな春らしいデザイン',
+                'price' => 7800,
+                'color' => 'イエロー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'フラワープリントワンピース',
+                'type' => 'ワンピース',
+                'detail' => '華やかな春らしいデザイン',
+                'price' => 7800,
+                'color' => 'ライトグリーン',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -61,6 +172,44 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ハイヒールパンプス',
                 'type' => 'シューズ',
                 'detail' => '足元を華やかに演出する',
+                'price' => 5500,
+                'color' => 'レッド',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ハイヒールパンプス',
+                'type' => 'シューズ',
+                'detail' => '足元を華やかに演出する',
+                'price' => 5500,
+                'color' => 'イエロー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ハイヒールパンプス',
+                'type' => 'シューズ',
+                'detail' => '足元を華やかに演出する',
+                'price' => 5500,
+                'color' => 'グリーン',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ハイヒールパンプス',
+                'type' => 'シューズ',
+                'detail' => '足元を華やかに演出する',
+                'price' => 5500,
+                'color' => 'ブルー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ハイヒールパンプス',
+                'type' => 'シューズ',
+                'detail' => '足元を華やかに演出する',
+                'price' => 5500,
+                'color' => 'ブラック',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -68,6 +217,17 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'カシミヤニットセーター',
                 'type' => 'トップス',
                 'detail' => '上質な素材で暖かさを提供',
+                'price' => 6700,
+                'color' => 'グレー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'カシミヤニットセーター',
+                'type' => 'トップス',
+                'detail' => '上質な素材で暖かさを提供',
+                'price' => 6700,
+                'color' => 'ホワイト',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -75,6 +235,26 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ボタニカルプリントブラウス',
                 'type' => 'トップス',
                 'detail' => '自然を感じさせる爽やかなデザイン',
+                'price' => 6500,
+                'color' => 'ライトグリーン',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ボタニカルプリントブラウス',
+                'type' => 'トップス',
+                'detail' => '自然を感じさせる爽やかなデザイン',
+                'price' => 6500,
+                'color' => 'グリーン',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ボタニカルプリントブラウス',
+                'type' => 'トップス',
+                'detail' => '自然を感じさせる爽やかなデザイン',
+                'price' => 6500,
+                'color' => 'ブラウン',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -82,6 +262,17 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ストライプ柄ワイドシャツ',
                 'type' => 'トップス',
                 'detail' => 'リラックス感のあるシルエットが特徴',
+                'price' => 4700,
+                'color' => 'ブルー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ストライプ柄ワイドシャツ',
+                'type' => 'トップス',
+                'detail' => 'リラックス感のあるシルエットが特徴',
+                'price' => 4700,
+                'color' => 'ブラック',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -89,6 +280,8 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'キャンバススニーカー',
                 'type' => 'シューズ',
                 'detail' => 'カジュアルなスタイルにぴったり',
+                'price' => 6800,
+                'color' => 'ホワイト',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -96,6 +289,17 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'レースアップブーツ',
                 'type' => 'シューズ',
                 'detail' => 'スタイリッシュな印象を演出',
+                'price' => 7800,
+                'color' => 'ブラウン',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'レースアップブーツ',
+                'type' => 'シューズ',
+                'detail' => 'スタイリッシュな印象を演出',
+                'price' => 7800,
+                'color' => 'ブラック',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -103,6 +307,17 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'レトロフラワープリントスカート',
                 'type' => 'ボトムス',
                 'detail' => 'ヴィンテージ感漂うロマンティックなデザイン',
+                'price' => 4000,
+                'color' => 'グリーン',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'レトロフラワープリントスカート',
+                'type' => 'ボトムス',
+                'detail' => 'ヴィンテージ感漂うロマンティックなデザイン',
+                'price' => 4000,
+                'color' => 'ブラウン',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -110,6 +325,26 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ベルト付きキャミソール',
                 'type' => 'トップス',
                 'detail' => 'ウエストを引き締めるベルトが付属',
+                'price' => 3800,
+                'color' => 'ブラック',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ベルト付きキャミソール',
+                'type' => 'トップス',
+                'detail' => 'ウエストを引き締めるベルトが付属',
+                'price' => 3800,
+                'color' => 'グレー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ベルト付きキャミソール',
+                'type' => 'トップス',
+                'detail' => 'ウエストを引き締めるベルトが付属',
+                'price' => 3800,
+                'color' => 'ホワイト',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -117,6 +352,26 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'デニムミニスカート',
                 'type' => 'ボトムス',
                 'detail' => 'カジュアルな着こなしにぴったりのアイテム',
+                'price' => 4500,
+                'color' => 'ブルー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'デニムミニスカート',
+                'type' => 'ボトムス',
+                'detail' => 'カジュアルな着こなしにぴったりのアイテム',
+                'price' => 4500,
+                'color' => 'ライトブルー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'デニムミニスカート',
+                'type' => 'ボトムス',
+                'detail' => 'カジュアルな着こなしにぴったりのアイテム',
+                'price' => 4500,
+                'color' => 'ホワイト',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -124,6 +379,26 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ボヘミアンスタイルワンピース',
                 'type' => 'ワンピース',
                 'detail' => '自由な雰囲気を演出するボヘミアンスタイル',
+                'price' => 7800,
+                'color' => 'レッド',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ボヘミアンスタイルワンピース',
+                'type' => 'ワンピース',
+                'detail' => '自由な雰囲気を演出するボヘミアンスタイル',
+                'price' => 7800,
+                'color' => 'オレンジ',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ボヘミアンスタイルワンピース',
+                'type' => 'ワンピース',
+                'detail' => '自由な雰囲気を演出するボヘミアンスタイル',
+                'price' => 7800,
+                'color' =>'グリーン',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -131,6 +406,26 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'レザーベルト',
                 'type' => 'アクセサリー',
                 'detail' => 'シンプルで使いやすいデザイン',
+                'price' => 2300,
+                'color' => 'ブラウン',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'レザーベルト',
+                'type' => 'アクセサリー',
+                'detail' => 'シンプルで使いやすいデザイン',
+                'price' => 2300,
+                'color' => 'ブラック',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'レザーベルト',
+                'type' => 'アクセサリー',
+                'detail' => 'シンプルで使いやすいデザイン',
+                'price' => 2300,
+                'color' => 'ホワイト',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -138,6 +433,17 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'フェザーピアス',
                 'type' => 'アクセサリー',
                 'detail' => 'エキゾチックな雰囲気を醸し出す',
+                'price' => 2500,
+                'color' => 'グレー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'フェザーピアス',
+                'type' => 'アクセサリー',
+                'detail' => 'エキゾチックな雰囲気を醸し出す',
+                'price' => 2500,
+                'color' => 'ブラウン',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -145,6 +451,44 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ボーダーカットソー',
                 'type' => 'トップス',
                 'detail' => 'シンプルで使いやすい定番アイテム',
+                'price' => 4200,
+                'color' => 'レッド',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ボーダーカットソー',
+                'type' => 'トップス',
+                'detail' => 'シンプルで使いやすい定番アイテム',
+                'price' => 4200,
+                'color' => 'オレンジ',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ボーダーカットソー',
+                'type' => 'トップス',
+                'detail' => 'シンプルで使いやすい定番アイテム',
+                'price' => 4200,
+                'color' => 'イエロー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ボーダーカットソー',
+                'type' => 'トップス',
+                'detail' => 'シンプルで使いやすい定番アイテム',
+                'price' => 4200,
+                'color' => 'グリーン',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ボーダーカットソー',
+                'type' => 'トップス',
+                'detail' => 'シンプルで使いやすい定番アイテム',
+                'price' => 4200,
+                'color' => 'ブルー',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -152,6 +496,17 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ベルベットヘッドバンド',
                 'type' => 'アクセサリー',
                 'detail' => '上品な光沢が魅力的',
+                'price' => 1800,
+                'color' => 'レッド',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ベルベットヘッドバンド',
+                'type' => 'アクセサリー',
+                'detail' => '上品な光沢が魅力的',
+                'price' => 1800,
+                'color' => 'ブラック',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -159,6 +514,17 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ロングリブニットワンピース',
                 'type' => 'ワンピース',
                 'detail' => 'シンプルなデザインで着回し力抜群',
+                'price' => 6800,
+                'color' => 'ブラック',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ロングリブニットワンピース',
+                'type' => 'ワンピース',
+                'detail' => 'シンプルなデザインで着回し力抜群',
+                'price' => 6800,
+                'color' => 'ホワイト',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -166,6 +532,17 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'キルティングジャケット',
                 'type' => 'アウター',
                 'detail' => '暖かさと軽さを両立した優れたアウター',
+                'price' => 12600,
+                'color' => 'ブラック',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'キルティングジャケット',
+                'type' => 'アウター',
+                'detail' => '暖かさと軽さを両立した優れたアウター',
+                'price' => 12600,
+                'color' => 'ホワイト',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -173,6 +550,17 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ボヘミアンスカーフ',
                 'type' => 'アクセサリー',
                 'detail' => 'エスニックな雰囲気を楽しめる',
+                'price' => 1800,
+                'color' => 'レッド',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'ボヘミアンスカーフ',
+                'type' => 'アクセサリー',
+                'detail' => 'エスニックな雰囲気を楽しめる',
+                'price' => 1800,
+                'color' => 'グリーン',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -180,6 +568,8 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ボーダープリントタンクトップ',
                 'type' => 'トップス',
                 'detail' => '夏にぴったりの爽やかなデザイン',
+                'price' => 2500,
+                'color' => 'ライトブルー',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -187,6 +577,8 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'デニムショートパンツ',
                 'type' => 'ボトムス',
                 'detail' => 'カジュアルなスタイルに欠かせないアイテム',
+                'price' => 4000,
+                'color' => 'ブルー',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -194,13 +586,26 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'ストレッチジョガーパンツ',
                 'type' => 'ボトムス',
                 'detail' => '動きやすさを追求した快適な履き心地',
+                'price' => 5000,
+                'color' => 'ブラック',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
                 'user_id' => 1,
-                'name' => 'スリムフィットホワイトジーンズ',
+                'name' => 'ストレッチジョガーパンツ',
+                'type' => 'ボトムス',
+                'detail' => '動きやすさを追求した快適な履き心地',
+                'price' => 5000,
+                'color' => 'グレー',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'スリムフィットジーンズ',
                 'type' => 'ボトムス',
                 'detail' => '清潔感あふれるスタイリッシュなデザイン',
+                'price' => 6700,
+                'color' => 'ブルー',
                 'created_at' => '2024/01/01 11:11:11'
             ],
             [
@@ -208,6 +613,35 @@ class ItemsTableSeeder extends Seeder
                 'name' => 'キャップ',
                 'type' => 'アクセサリー',
                 'detail' => 'スポーティーなアクセントをプラス',
+                'price' => 2300,
+                'color' => 'レッド',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'キャップ',
+                'type' => 'アクセサリー',
+                'detail' => 'スポーティーなアクセントをプラス',
+                'price' => 2300,
+                'color' => 'オレンジ',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'キャップ',
+                'type' => 'アクセサリー',
+                'detail' => 'スポーティーなアクセントをプラス',
+                'price' => 2300,
+                'color' => 'グリーン',
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'user_id' => 1,
+                'name' => 'キャップ',
+                'type' => 'アクセサリー',
+                'detail' => 'スポーティーなアクセントをプラス',
+                'price' => 2300,
+                'color' => 'ブラック',
                 'created_at' => '2024/01/01 11:11:11'
             ],
         ]);

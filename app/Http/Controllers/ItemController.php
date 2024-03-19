@@ -58,6 +58,10 @@ class ItemController extends Controller
                 $items->orderBy('name', 'asc');
             } elseif ($sort === 'name_desc') {
                 $items->orderBy('name', 'desc');
+            } elseif ($sort === 'price_asc') {
+                $items->orderBy('price', 'asc');
+            } elseif ($sort === 'price_desc') {
+                $items->orderBy('price', 'desc');
             }
         }
 
@@ -82,14 +86,20 @@ class ItemController extends Controller
             // バリデーション
             $this->validate($request, [
                 'name' => 'required|max:100',
+                'type' => 'required',
+                'detail' => 'nullable|max:500',
+                'price' => 'required|numeric|min:0',
+                'color' => 'required',
             ]);
 
             // 商品登録
             Item::create([
                 'user_id' => Auth::user()->id,
                 'name' => $request->name,
-                'type' => $request->type,
+                'type' => $request->input('type'),
                 'detail' => $request->detail,
+                'price' => $request->price,
+                'color' => $request->input('color'),
             ]);
 
             return redirect('/items');
@@ -112,9 +122,20 @@ class ItemController extends Controller
      */
     public function update(Request $request, Item $item) {
 
+        // バリデーション
+        $this->validate($request, [
+            'name' => 'required|max:100',
+            'type' => 'required',
+            'detail' => 'nullable|max:500',
+            'price' => 'required|numeric|min:0',
+            'color' => 'required',
+        ]);
+
         $item->name = $request->name;
-        $item->type = $request->type;
+        $item->type = $request->input('type');
         $item->detail = $request->detail;
+        $item->price = $request->price;
+        $item->color = $request->input('color');
         $item->save();
 
         return redirect()->route('items.edit', $item);
