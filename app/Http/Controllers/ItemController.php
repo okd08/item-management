@@ -147,6 +147,9 @@ class ItemController extends Controller
         $item->color = $request->input('color');
         $item->save();
 
+        // 更新メッセージ
+        $request->session()->flash('status', '・商品情報を更新しました');
+
         return redirect()->route('items.edit', $item);
     }
 
@@ -156,6 +159,9 @@ class ItemController extends Controller
     public function destroy(Item $item) {
 
         $item->delete();
+
+        // 削除メッセージ
+        session()->flash('status', '・商品を削除しました');
 
         return redirect('/items');
     }

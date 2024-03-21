@@ -93,7 +93,7 @@
                         </div>
                 </div>
 
-                    <div class="card-footer">
+                    <div class="card-footer text-center">
                         <button type="submit" class="btn btn-primary">登録</button>
                     </div>
                 </form>

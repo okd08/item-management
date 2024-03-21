@@ -9,6 +9,13 @@
 @section('content')
     <div class="row">
         <div class="col-12">
+            {{-- 削除メッセージ --}}
+            @if(session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
+                </div>
+            @endif
+
             {{-- 戻るボタン --}}
             <div class="text-right">
                 <a href="{{ route('home') }}">&laquo戻る</a>
@@ -20,7 +27,7 @@
                     <div class="card-header">
                         {{-- 商品登録ボタン --}}
                         <div class="text-right mb-4">
-                            <a href="{{ url('items/add') }}" class="btn btn-primary">商品登録</a>
+                            <a href="{{ url('items/add') }}" class="btn btn-primary btn-lg">商品登録</a>
                         </div>
                         {{-- 検索フォーム --}}
                         <div class="text-left">
@@ -51,7 +58,7 @@
                             {{-- キーワード入力 --}}
                             <input type="text" name="keyword" value="{{ $keyword }}" placeholder="キーワードを入力">
                             {{-- 検索ボタン --}}
-                            <button type="submit" class="btn btn-primary">検索</button>
+                            <button type="submit" class="btn btn-secondary">検索</button>
                         </div>
                     </div>
                     <div class="card-body table-responsive p-0">

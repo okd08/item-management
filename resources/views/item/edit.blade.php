@@ -3,7 +3,7 @@
 @section('title', '商品編集')
 
 @section('content_header')
-    <h1>商品編集</h1>
+    <h1>商品詳細/編集</h1>
 @stop
 
 @section('content')
@@ -18,6 +18,13 @@
                     </ul>
                 </div>
             @endif
+            {{-- 更新メッセージ --}}
+            @if(session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
+                </div>
+            @endif
+
 
             {{-- 戻るボタン --}}
             <div class="text-right">
@@ -94,18 +101,24 @@
                         </div>
                     </div>
 
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">更新</button>
+                    <div class="card-footer text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">更新</button>
                     </div>
                 </form>
 
-                <form method="POST" action="{{ route('items.destroy', $item) }}">
+                <form method="POST" action="{{ route('items.destroy', $item) }}" onsubmit="return confirmDelete()">
                     @method('DELETE')
                     @csrf
-                    <div class="card-footer">
+                    <div class="card-footer text-center">
                         <button type="submit" class="btn btn-danger">削除</button>
                     </div>
                 </form>
+                <script>
+                    function confirmDelete() {
+                        return confirm("本当に削除しますか？");
+                    }
+                </script>
+                
             </div>
         </div>
     </div>
