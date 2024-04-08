@@ -16,20 +16,26 @@ class UsersTableSeeder extends Seeder
     {
         DB::table('users')->insert([
             [
-                'name' => 'テスト',
+                'name' => '管理用',
+                'email' => 'kanri@kanri.com',
+                'password' => Hash::make('password123'),
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'name' => '管理用2',
+                'email' => 'kanri2@kanri.com',
+                'password' => Hash::make('password123'),
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'name' => '管理用3',
+                'email' => 'kanri3@kanri.com',
+                'password' => Hash::make('password123'),
+                'created_at' => '2024/01/01 11:11:11'
+            ],
+            [
+                'name' => 'テストアカウント',
                 'email' => 'test@test.com',
-                'password' => Hash::make('password123'),
-                'created_at' => '2024/01/01 11:11:11'
-            ],
-            [
-                'name' => 'テスト2',
-                'email' => 'test2@test.com',
-                'password' => Hash::make('password123'),
-                'created_at' => '2024/01/01 11:11:11'
-            ],
-            [
-                'name' => 'テスト3',
-                'email' => 'test3@test.com',
                 'password' => Hash::make('password123'),
                 'created_at' => '2024/01/01 11:11:11'
             ],

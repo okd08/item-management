@@ -28,10 +28,10 @@
                 <form method="POST">
                     @csrf
                     <div class="card-body">
-                        {{-- 名前 --}}
+                        {{-- 商品名 --}}
                         <div class="form-group">
-                            <label for="name">名前 <span style="color: red; font-size: 12px;">※必須※</span></label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="名前" value="{{ old('name') }}">
+                            <label for="name">商品名 <span style="color: red; font-size: 12px;">※必須※</span></label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="商品名を入力" value="{{ old('name') }}">
                         </div>
                         {{-- カテゴリ― --}}
                         <div class="form-group">
@@ -83,13 +83,13 @@
                         </div>
                         {{-- 詳細 --}}
                         <div class="form-group">
-                            <label for="detail">詳細</label>
-                            <input type="text" class="form-control" id="detail" name="detail" placeholder="詳細説明" value="{{ old('detail') }}">
+                            <label for="detail">商品詳細</label>
+                            <input type="text" class="form-control" id="detail" name="detail" placeholder="詳細説明を入力" value="{{ old('detail') }}">
                         </div>
                         {{-- 金額 --}}
                         <div class="form-group">
                             <label for="price">価格 <span style="color: red; font-size: 12px;">※必須※</span></label>
-                            <input type="number" class="form-control" id="detail" name="price" placeholder="金額" value="{{ old('price') }}">
+                            <input type="number" class="form-control" id="detail" name="price" placeholder="価格を入力" value="{{ old('price') }}">
                         </div>
                 </div>
 

@@ -71,8 +71,8 @@
                                     <th>ID<button type="submit" name="sort" value="@if (!isset($sort) || $sort !== 'id_asc') id_asc @elseif ($sort === 'id_asc') id_desc @endif" class="btn btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-chevron-expand" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><path fill-rule="evenodd" d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"/></svg>
                                     </button></th>
-                                    {{-- 名前 --}}
-                                    <th>名前<button type="submit" name="sort" value="@if (!isset($sort) || $sort !== 'name_asc') name_asc @elseif ($sort === 'name_asc') name_desc @endif" class="btn btn-sm">
+                                    {{-- 商品名 --}}
+                                    <th>商品名<button type="submit" name="sort" value="@if (!isset($sort) || $sort !== 'name_asc') name_asc @elseif ($sort === 'name_asc') name_desc @endif" class="btn btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-chevron-expand" viewBox="0 0 16 16" style="transform: translate(0, -3px);"><path fill-rule="evenodd" d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"/></svg>
                                     </button></th>
                                     {{-- カテゴリー --}}

@@ -20,6 +20,9 @@ return new class extends Migration
             $table->integer('price')->nullable(false); //金額
             $table->string('color', 50)->nullable(false); //色
             $table->timestamps();
+
+            // ユーザーが削除された場合、アイテムも削除
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
