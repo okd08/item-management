@@ -85,6 +85,14 @@ class ItemController extends Controller
         return view('item.index', compact('items', 'keyword', 'sort', 'types', 'colors'));
     }
 
+    public function index2(Request $request)
+    {
+        $items = Item::all();
+
+
+        return view('item.index2', compact('items'));
+    }
+
     /**
      * 商品登録
      */

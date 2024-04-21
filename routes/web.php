@@ -28,6 +28,8 @@ Route::get('/', [HomeController::class, 'index'])
 Route::prefix('items')->group(function () {
     Route::get('/', [ItemController::class, 'index'])
         ->name('items.index');
+    Route::get('/proto', [ItemController::class, 'index2'])
+        ->name('items.index2');
     Route::get('/add', [ItemController::class, 'add']);
     Route::post('/add', [ItemController::class, 'add']);
     Route::get('/{item}/edit', [ItemController::class, 'edit'])
